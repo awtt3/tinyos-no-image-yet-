@@ -1,17 +1,3 @@
-📁 Project Structure
-/tinyos
-│
-├── boot.asm         # Bootloader (real mode → protected mode)
-/entry.s             # Kernel entry stub
-/gdt.s               # GDT setup + gdt_flush
-/isr.s               # ISR / IRQ stubs 0–47
-/isr_common.S        # Shared interrupt handler glue
-/kernel.c            # Main kernel logic
-/linker.ld           # Kernel memory layout
-/build.bat           # Windows build script
-│
-├── *.o              # Compiled object files
-
 ⚙️ Features
 🖥 VGA Text Driver
 
@@ -130,9 +116,6 @@ Filesystem
 
 Multitasking (task switching)
 
-📜 License
-
-MIT License (or another you prefer).
 
 🙌 Credits
 
