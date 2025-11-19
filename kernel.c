@@ -355,3 +355,4 @@ void gdt_flush(uint32_t ptr) {
     asm volatile ("push %0; call gdt_flush; add $4, %%esp" :: "r"(ptr) : );
 }
 
+
