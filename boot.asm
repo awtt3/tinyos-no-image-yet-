@@ -10,7 +10,6 @@ start:
     mov ss, ax
     mov sp, 0x7C00
 
-    ; Load kernel.bin (assuming it's <= 32 sectors)
     mov si, 0x7E00
     mov bx, 0x1000  ; load address for kernel
     mov cx, 1        ; number of sectors
@@ -21,3 +20,4 @@ start:
 
 times 510-($-$$) db 0
 dw 0xAA55
+
